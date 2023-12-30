@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+#define YES 1 /* Estado en verdadero */
+#define NO 0 /* Estado en falso */
+
 #define ARRAY_SIZE 100 /* tamaño del array para
     guardar las palabras */
 
@@ -16,8 +19,9 @@ int main()
     int c, nw, i, j, nl, wordLimitExceeded;
     int nwlenght[ARRAY_SIZE];
 
-    nw = nl = wordLimitExceeded = 0;
-    clearArray(nwlenght);
+    nw = nl = 0;
+    wordLimitExceeded = NO;
+    clearArray(nwlenght); // inicializar valores del array
 
     while ((c = getchar()) != EOF) {
         // manejar desbordamiento del array
@@ -29,10 +33,10 @@ int main()
                 ++nwlenght[nw];
             }
         } else {
-            wordLimitExceeded = 1;
+            wordLimitExceeded = YES;
         }
 
-        if (c == '\n' || wordLimitExceeded == 1) {
+        if (c == '\n' || wordLimitExceeded == YES) {
             putchar('\n');
             for (i = 0; i < nw; ++i) {
                 if (nwlenght[i] > 0) {
@@ -46,11 +50,11 @@ int main()
             }
 
             nw = 0;
-            clearArray(nwlenght);
+            clearArray(nwlenght); // poner valores del array en 0
             putchar('\n');
         }
 
-        if (wordLimitExceeded == 1) {
+        if (wordLimitExceeded == YES) {
             printf("Error! limite de palabras alcanzado.\n");
             break;
         }
