@@ -26,4 +26,4 @@ if [ ! -z "$1" ]; then
 fi
 
 # Compile and run the C code with the parameter
-cc "$route" && ./a.out
+cc "./$route" && ./a.out
