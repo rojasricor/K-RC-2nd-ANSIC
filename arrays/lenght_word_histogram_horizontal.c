@@ -6,10 +6,10 @@
 #define ARRAY_SIZE 100 /* tamaño del array para
     guardar las palabras */
 
-void clearArray(int nwlenght[ARRAY_SIZE])
+void clearArray(int arr[ARRAY_SIZE])
 {
     for (int i = 0; i < ARRAY_SIZE; ++i)
-        nwlenght[i] = 0;
+        arr[i] = 0;
 }
 
 /* imprime histograma de forma horizontal de
