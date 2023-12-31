@@ -34,11 +34,12 @@ int main()
             if (c == ' ' || c == '\t' || c == '\n') {
                 if (lwbig < nwlenght[nw]) {
                     lwbig = nwlenght[nw];
-                } else {
-                    // Nada que hacer aquí
                 }
-                ++nw;
-                ++nl;
+
+                if (nwlenght[nw] > 0) {
+                    ++nw;
+                    ++nl;
+                }
             } else {
                 ++nwlenght[nw];
             }
@@ -47,11 +48,15 @@ int main()
         }
 
         if (c == '\n' || wordLimitExceeded == YES) {
-            putchar('\n');
+            if (nw != 0) {
+                printf("Número de palabras: %d", nw);
+                printf("\n\n\n");
+            }
+            
             for (i = lwbig; i > 0; --i) {
                 for (j = 0; j < nw; ++j) {
                     if (nwlenght[j] >= i)
-                        printf("# ");
+                        printf("* ");
                     else
                         printf("  ");
                 }

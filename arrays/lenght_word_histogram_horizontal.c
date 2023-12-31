@@ -32,8 +32,10 @@ int main()
         // manejar desbordamiento del array
         if (nw < ARRAY_SIZE) {
             if (c == ' ' || c == '\t' || c == '\n') {
-                ++nw;
-                ++nl;
+                if (nwlenght[nw] > 0) {
+                    ++nw;
+                    ++nl;
+                }
             } else {
                 ++nwlenght[nw];
             }
@@ -42,7 +44,10 @@ int main()
         }
 
         if (c == '\n' || wordLimitExceeded == YES) {
-            putchar('\n');
+            if (nw != 0) {
+                printf("\n");
+            }
+
             for (i = 0; i < nw; ++i) {
                 if (nwlenght[i] > 0) {
                     printf("%d: ", i + 1);
