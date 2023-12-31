@@ -23,6 +23,11 @@ int main()
     nl = nw = lwbig = 0;
     clearArray(nwlenght); // inicializar valores del array
 
+    printf("\nIngrese una cadena de texto y se imprimirá un histograma\n");
+    printf("en forma vertical con la longitud de las palabras:");
+    printf("\n\n");
+    printf("<ctrl D> para terminar.");
+    printf("\n\n");
     while ((c = getchar()) != EOF) {
         // manejar desbordamiento del array
         if (nw < ARRAY_SIZE) {

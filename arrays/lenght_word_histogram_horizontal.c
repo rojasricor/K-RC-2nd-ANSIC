@@ -23,6 +23,11 @@ int main()
     wordLimitExceeded = NO;
     clearArray(nwlenght); // inicializar valores del array
 
+    printf("\nIngrese una cadena de texto y se imprimirá un histograma\n");
+    printf("en forma horizontal con la longitud de las palabras:");
+    printf("\n\n");
+    printf("<ctrl D> para terminar.");
+    printf("\n\n");
     while ((c = getchar()) != EOF) {
         // manejar desbordamiento del array
         if (nw < ARRAY_SIZE) {
