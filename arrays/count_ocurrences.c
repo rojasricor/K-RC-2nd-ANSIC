@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void clearArray(int arr[]);
+
 /* cuenta dígitos, espacios blancos, y otros */
 int main()
 {
@@ -7,8 +9,7 @@ int main()
     int ndigit[10];
 
     nwhite = nother = 0;
-    for (i = 0; i < 10; ++i)
-        ndigit[i] = 0;
+    clearArray(ndigit);
 
     printf("\nIngrese una cadena de texto y se contará los dígitos, espacios blancos y otros caracteres:");
     printf("\n\n");
@@ -29,4 +30,12 @@ int main()
     for (i = 0; i < 10; ++i)
         printf(" %d", ndigit[i]);
     printf(", espacios blancos = %d, otros = %d\n", nwhite, nother);
+    
+    return 0;
+}
+
+void clearArray(int arr[])
+{
+    for (int i = 0; i < 10; ++i)
+        arr[i] = 0;
 }

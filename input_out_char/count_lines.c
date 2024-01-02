@@ -23,4 +23,6 @@ int main()
     printf("Programa finalizado.");
     printf("\n\n");
     printf("Líneas de entrada: %d\n", nl);
+
+    return 0;
 }

@@ -4,4 +4,5 @@
 int main()
 {
     printf("Valor de EOF: %d\n", EOF);
+    return 0;
 }

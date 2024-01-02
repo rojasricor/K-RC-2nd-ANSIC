@@ -21,4 +21,6 @@ int main()
     printf("Programa finalizado.");
     printf("\n\n");
     printf("Número de caracteres: %.0f\n", nc);
+
+    return 0;
 }

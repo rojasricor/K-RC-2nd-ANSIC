@@ -24,4 +24,6 @@ int main()
     printf("Programa finalizado.");
     printf("\n\n");
     printf("Número de caracteres: %ld\n", nc);
+
+    return 0;
 }

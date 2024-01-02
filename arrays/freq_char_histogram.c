@@ -2,16 +2,13 @@
 
 #define WS ' ' /* first char of printable ASCII */
 #define LASTC '~' /* last char of printable ASCII */
-
 #define ARRAY_SIZE 94 /* tamaño del array para
     guardar las palabras */
 
-void clearArray(int arr[ARRAY_SIZE])
-{
-    for (int i = 0; i < ARRAY_SIZE; ++i)
-        arr[i] = 0;
-}
+void clearArray(int arr[]);
 
+/* imprime histograma de frecuencias con
+    las que aparece un caracter */
 int main()
 {
     int c, i, j;
@@ -59,4 +56,11 @@ int main()
     }
 
     printf("Programa finalizado.\n\n");
+    return 0;
+}
+
+void clearArray(int arr[])
+{
+    for (int i = 0; i < ARRAY_SIZE; ++i)
+        arr[i] = 0;
 }

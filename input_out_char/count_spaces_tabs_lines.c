@@ -30,4 +30,6 @@ int main()
     printf("Espacios en blanco: %d\n", ws);
     printf("Tabuladores: %d\n", tabs);
     printf("Nueva línea: %d\n", nl);
+
+    return 0;
 }

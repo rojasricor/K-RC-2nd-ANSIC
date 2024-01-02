@@ -23,4 +23,5 @@ int main()
         printf("\nEntrada finalizada por el usuario...\n");
     
     printf("Programa finalizado.\n");
+    return 0;
 }

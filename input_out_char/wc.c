@@ -26,9 +26,12 @@ int main()
             ++nw;
         }
     }
+
     printf("\n\n");
     printf("Programa finalizado...");
     printf("\n\n");
     printf("Líneas\t\tPalabras\tCaracteres\n");
     printf("%3d\t\t%4d\t\t%5d\n", nl, nw, nc);
+    
+    return 0;
 }
