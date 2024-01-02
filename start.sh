@@ -12,7 +12,7 @@ show_help() {
 }
 
 # Default route param
-route="get_started/hola.c"
+route="chapter_1/get_started/hola.c"
 
 # Check for --help option
 if [ "$1" == "--help" ]; then
