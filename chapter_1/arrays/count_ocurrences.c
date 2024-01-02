@@ -9,7 +9,7 @@ int main()
     int ndigit[10];
 
     nwhite = nother = 0;
-    clearArray(ndigit);
+    clearArray(ndigit); // inicializar valores del array
 
     printf("\nIngrese una cadena de texto y se contará los dígitos, espacios blancos y otros caracteres:");
     printf("\n\n");
@@ -34,6 +34,7 @@ int main()
     return 0;
 }
 
+/* clearArray: poner valores del array en 0 */
 void clearArray(int arr[])
 {
     for (int i = 0; i < 10; ++i)

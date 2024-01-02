@@ -14,7 +14,7 @@ int main()
     int c, i, j;
     int nchar[ARRAY_SIZE];
 
-    clearArray(nchar);
+    clearArray(nchar); // inicializar valores del array
 
     printf("\nIngrese una cadena de texto y se imprimirá un\n");
     printf("histograma de frecuencias con las que aparecen\n");
@@ -59,6 +59,7 @@ int main()
     return 0;
 }
 
+/* clearArray: poner valores del array en 0 */
 void clearArray(int arr[])
 {
     for (int i = 0; i < ARRAY_SIZE; ++i)

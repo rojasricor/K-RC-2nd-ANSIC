@@ -78,6 +78,7 @@ int main()
     return 0;
 }
 
+/* clearArray: poner valores del array en 0 */
 void clearArray(int arr[])
 {
     for (int i = 0; i < ARRAY_SIZE; ++i)

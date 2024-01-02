@@ -25,6 +25,7 @@ int main()
     return 0;
 }
 
+/* fahrToCelsius: hace la conversión de fahr a celsius */
 float farhToCelsius(float fahr)
 {
     return (5.0 / 9.0) * (fahr - 32.0);
