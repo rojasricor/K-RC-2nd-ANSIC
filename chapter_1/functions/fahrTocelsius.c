@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-float farhToCelsius(float fahr);
+float farhtocelsius(float fahr);
 
 /* imprime la tabla Fahrenheit-Celsius
     para fahr = 0, 20, ..., 300; versión de punto flotante
@@ -17,7 +17,7 @@ int main()
     fahr = lower;
     printf("°Fahr\t - \t°Celsius\n");   /* imprime un encabezado sobre la tabla */
     while (fahr <= upper) {
-        celsius = farhToCelsius(fahr);
+        celsius = farhtocelsius(fahr);
         printf("%3.0f°F\t\t%5.1f°C\n", fahr, celsius);
         fahr += step;
     }
@@ -26,7 +26,7 @@ int main()
 }
 
 /* fahrToCelsius: hace la conversión de fahr a celsius */
-float farhToCelsius(float fahr)
+float farhtocelsius(float fahr)
 {
     return (5.0 / 9.0) * (fahr - 32.0);
 }

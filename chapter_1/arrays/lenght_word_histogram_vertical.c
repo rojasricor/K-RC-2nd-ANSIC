@@ -5,7 +5,7 @@
 #define YES 1 /* Estado en verdadero */
 #define NO 0 /* Estado en falso */
 
-void clearArray(int arr[]);
+void cleararray(int arr[]);
 
 /* imprime histograma de forma vertical de
     la longitud de las palabras */
@@ -16,7 +16,7 @@ int main()
 
     wordLimitExceeded = NO;
     nl = nw = lwbig = 0;
-    clearArray(nwlenght); // inicializar valores del array
+    cleararray(nwlenght); // inicializar valores del array
 
     printf("\nIngrese una cadena de texto y se imprimirá un histograma\n");
     printf("en forma vertical con la longitud de las palabras:");
@@ -60,7 +60,7 @@ int main()
             }
 
             nw = lwbig = 0;
-            clearArray(nwlenght); // poner valores del array en 0
+            cleararray(nwlenght); // poner valores del array en 0
             putchar('\n');
         }
 
@@ -78,8 +78,8 @@ int main()
     return 0;
 }
 
-/* clearArray: poner valores del array en 0 */
-void clearArray(int arr[])
+/* cleararray: poner valores del array en 0 */
+void cleararray(int arr[])
 {
     for (int i = 0; i < ARRAY_SIZE; ++i)
         arr[i] = 0;

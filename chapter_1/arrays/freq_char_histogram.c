@@ -5,7 +5,7 @@
 #define ARRAY_SIZE 94 /* tamaño del array para
     guardar las palabras */
 
-void clearArray(int arr[]);
+void cleararray(int arr[]);
 
 /* imprime histograma de frecuencias con
     las que aparece un caracter */
@@ -14,7 +14,7 @@ int main()
     int c, i, j;
     int nchar[ARRAY_SIZE];
 
-    clearArray(nchar); // inicializar valores del array
+    cleararray(nchar); // inicializar valores del array
 
     printf("\nIngrese una cadena de texto y se imprimirá un\n");
     printf("histograma de frecuencias con las que aparecen\n");
@@ -46,7 +46,7 @@ int main()
                 }
             }
 
-            clearArray(nchar); // poner valores del array en 0
+            cleararray(nchar); // poner valores del array en 0
             putchar('\n');
         }
     }
@@ -59,8 +59,8 @@ int main()
     return 0;
 }
 
-/* clearArray: poner valores del array en 0 */
-void clearArray(int arr[])
+/* cleararray: poner valores del array en 0 */
+void cleararray(int arr[])
 {
     for (int i = 0; i < ARRAY_SIZE; ++i)
         arr[i] = 0;
